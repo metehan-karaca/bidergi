@@ -28,7 +28,7 @@ body {
 
 #kapak-bidergi {
 	background-color: #FCE6D8;
-	height: 30%;
+	min-height: 30%;
 	max-width: 100%;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -51,17 +51,20 @@ body {
 #kapak-baslik1 {
 	font-family: 'Kudryashev Display';
 	font-size: 64px;
-	line-height: 0.1;
+	line-height: 1;
+	margin-bottom: 1.5vh;
+
 }
 #kapak-baslik2 {
 	font-family: 'Minion Pro Regular';
 	font-size: 15px;
-	line-height: 0.4;
+	line-height: 1;
 	margin-left: 0.1vw;
+	margin-bottom: -1vh;
 }
 #kapak-baslik3 {
 	font-family: 'Codec Pro';
 	font-size: 15px;
-	line-height: 0.4;
+	line-height: 1;
 	margin-left: 0.1vw;
 }
