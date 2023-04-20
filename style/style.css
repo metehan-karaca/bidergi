@@ -1,0 +1,29 @@
+#kapak-above-fold {
+	max-height: 100vh;
+	overflow: hidden;
+
+}
+
+#kapak-bidergi {
+	background-color: #FCE6D8;
+	height: 30%;
+	max-width: 100%;
+	padding-left: 10%;
+	padding-top: 10%;
+	padding-bottom: 5%;
+	
+}
+
+
+#black-bar {
+	background-color: #000000;
+	height: 1vh;
+	width: 100%;
+}
+
+
+body {
+	max-width: 80vh;
+	margin: auto;
+}
+
