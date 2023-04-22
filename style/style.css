@@ -2,22 +2,23 @@
     font-family: 'Kudryashev Display';
     src: url('KudryashevDisplay-Sans.eot');
     src: local('Kudryashev Display Sans'), local('KudryashevDisplay-Sans'),
-        url('KudryashevDisplay-Sans.eot?#iefix') format('embedded-opentype'),
-        url('KudryashevDisplay-Sans.woff2') format('woff2'),
-        url('KudryashevDisplay-Sans.woff') format('woff'),
-        url('KudryashevDisplay-Sans.ttf') format('truetype');
+        url('../fonts/KudryashevDisplay-Sans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/KudryashevDisplay-Sans.woff') format('woff'),
+        url('../fonts/KudryashevDisplay-Sans.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Minion Pro Regular';
-    src: local('Minion Pro Regular'), url('../fonts/MinionPro-Regular.woff') format('woff');
+    src: local('Minion Pro Regular'), url('../fonts/MinionPro-Regular.ttf') format('truetype');
     }
 @font-face{
 	font-family: 'Codec Pro';
-	src: local('Codec Pro Regular'), url('../fonts/codec-pro.regular.ttf') format('ttf');
+	src: local('Codec Pro Regular'), url('../fonts/codec-pro.regular.ttf') format('truetype');
 }
 body {
 	max-width: 90vh;
 	margin: auto;
+	background-color: #faf8f1;
+	padding: 1vh;
 }
 
 #kapak-above-fold {
@@ -28,7 +29,7 @@ body {
 
 #kapak-bidergi {
 	background-color: #FCE6D8;
-	min-height: 30%;
+	min-height: 20%;
 	max-width: 100%;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -40,13 +41,9 @@ body {
 
 #black-bar {
 	background-color: #000000;
-	height: 1vh;
+	height: 0.7vh;
 	width: 100%;
 }
-
-
-
-
 
 #kapak-baslik1 {
 	font-family: 'Kudryashev Display';
@@ -67,4 +64,84 @@ body {
 	font-size: 15px;
 	line-height: 1;
 	margin-left: 0.1vw;
+}
+
+#imtiyaz {
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 10%;
+	font-family: 'Cinzel', serif;
+	color: white;
+	background-color: #ff794a;
+	padding: 3vh;
+	padding-left: 6vh;
+	border-radius: 7vw;
+	font-weight: bold;
+	font-size: 12;
+	
+}
+
+
+#icindekiler-baslik {
+	font-family: 'Kudryashev Display';
+	font-size: 64px;
+	color: #ff794a;
+	text-align: center;
+	margin-bottom: 4%;
+}
+#icindekiler-p {
+	margin-bottom: -1.5vh;
+}
+#seperator-thing {
+	height: 1vh;
+	width: 80%;
+	background-color: #ff794a;
+	border-radius: 100%;
+	margin: auto;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 3vh;
+}
+
+.grid-item {
+  padding-left: 4vw;
+  text-align: left;
+border-radius: 10vh;
+	font-family: 'Codec Pro', serif, Arial;
+	border: 0.6vh solid #ff794a;
+	color: black;
+}
+a.grid-item:visited{
+	background-image: url("../image/tick.png")
+}
+
+@media (max-width : 460px ){
+	#icindekiler-p {
+		font-size: 40px;
+	}
+	#kapak-bidergi{
+		min-height: 10%;
+	}
+	#kapak-baslik1{
+		margin-top: 1%;
+	}
+	#imtiyaz{
+		font-size: 13px;
+		padding-left: 6vw;
+	}
+	
+}
+
+.genel-baslik {
+	font-family: 'Kudryashev Display',Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 75px;
+}
+
+
+
+.genel-paragraf {
+	font-family: 'Codec Pro';
+	font-size: 22px;
 }
